@@ -2,14 +2,12 @@ var express = require('express');
 var app = express();
 
 const random = require('./routes/random');
-const addition = require('./routes/addition')
+const addition = require('./routes/addition');
 
-app.listen(3000, () => {
-	console.log("3000");
-});
- 
-app.get('/', (req, res) => {
-	res.send('Привет');
+app.use(express.static(__dirname + '/public'));
+
+app.listen(80, () => {
+	console.log("80");
 });
 
 app.use('/random', random);

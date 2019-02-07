@@ -1,0 +1,20 @@
+<html>
+	<title>Random</title>
+
+	<body>
+		<form>
+			Min : <input type="text" id="min" /></br>
+			Max : <input type="text" id="max" /></br>
+			<input type="button" id="ok" value="ok"/></br>
+			<h1 id="result"></h1>
+		</form>
+
+		<script>
+			document.getElementById("ok").addEventListener("click", function() {
+				var min = parseInt(document.getElementById("min").value);
+				var max = parseInt(document.getElementById("max").value);
+				document.getElementById("result").innerHTML = Math.floor((Math.random() * max) + min);;
+			});
+		</script>
+	</body>
+</html>
