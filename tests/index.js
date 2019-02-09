@@ -28,7 +28,7 @@ describe('Route /', () => {
     	return request(app)
         .get('/')
         .then(res => {
-        	assert.equal(res.text, 'Привет');
+        	assert.notEqual(res.text, 'Привет');
         });
     });
 
