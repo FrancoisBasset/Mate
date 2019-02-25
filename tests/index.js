@@ -24,7 +24,7 @@ describe('Route /', () => {
     	});
     });
 
-    it('should show Привет', () => {
+    it('should not show Привет', () => {
     	return request(app)
         .get('/')
         .then(res => {
