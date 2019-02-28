@@ -18,10 +18,12 @@
   },
   "homepage": "https://github.com/FrancoisBasset/Mate#readme",
   "dependencies": {
+    "app-root-path": "^2.1.0",
     "chai": "^4.2.0",
     "express": "^4.16.4",
     "mocha": "^5.2.0",
     "random": "^2.0.13",
-    "supertest": "^3.4.1"
+    "supertest": "^3.4.1",
+    "winston": "^3.2.1"
   }
 }
